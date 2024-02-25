@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <style>
+        /* Button Styling */
+        button{
+            border: 0 transparent;
+        }
+
+        /* pagination position styling */
+        #section {
+            position: relative;
+            overflow: hidden;
+            display: inline;
+            width: 300px;
+            height: 20px;
+        }
+         
+        /* pagination styling */
+        #section button {
+            color: black;
+            padding: 10px 18px;
+            text-decoration: none;
+        }
+         
+        /* pagination hover effect on non-active */
+        #section button:hover:not(.active) {
+            background-color: #031F3B;
+            color: white;
+        }
+         
+        /* pagination hover effect on active*/
+         
+        .active {
+            background-color: turquoise;
+            color: white;
+        }
+         
+        .bold {
+            font-weight: bold;
+        }
+         
+        #content {
+            margin: 50px;
+            padding: 15px;
+            width: 700px;
+            height: 100px;
+            border: 2px solid black;
+        }
+    </style>
+    <script src="s2.js"></script>
+</head>
+<body>
+    <center>
+        <div id="content"></div>
+        <br>
+        <span id="display">change: 1</span>
+        <br>
+        <span id="section"></span>
+    </center>
+</body>
+</html>
